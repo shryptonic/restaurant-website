@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CIEL — Intimate fine dining. Mayfair, London. Three Michelin Stars."/>
+  <title>CIEL — Fine Dining · London</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Magnetic cursor -->
+  <div id="cur"></div>
+  <div id="cur2"></div>
+  <div id="cur-label"></div>
+
+  <!-- ── NAV ── -->
+  <header id="hdr">
+    <a href="#" class="brand" aria-label="CIEL Home">CIEL</a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#find">Find Us</a>
+    </nav>
+    <a href="#reserve" class="hdr-cta">Book a Table</a>
+    <button id="mob-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <div id="mob-nav">
+    <a href="#menu" class="mob-link">Menu</a>
+    <a href="#reserve" class="mob-link">Reserve</a>
+    <a href="#find" class="mob-link">Find Us</a>
+    <a href="#reserve" class="mob-link mob-cta">Book a Table →</a>
+  </div>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="hero">
+
+    <!-- Big parallax name in background -->
+    <div class="hero-bg-name" id="bgName" aria-hidden="true">CIEL</div>
+
+    <!-- Parallax photo -->
+    <div class="hero-photo" id="heroPhoto">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=90"
+        alt="The dining room at CIEL"
+        id="heroImg"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-label" id="h1">Three Michelin Stars · Mayfair</p>
+      <h1 class="hero-h1" id="h2">
+        <span class="hline">Intimacy</span>
+        <span class="hline hline-it">over everything.</span>
+      </h1>
+      <p class="hero-body" id="h3">
+        Twelve tables. One seating per evening.<br/>
+        London's most considered dining room.
+      </p>
+      <div class="hero-btns" id="h4">
+        <a href="#reserve" class="btn-dark" data-label="Reserve">Reserve a Table</a>
+        <a href="#menu" class="btn-line" data-label="Menu">View Menu</a>
+      </div>
+    </div>
+
+    <!-- Scroll nudge -->
+    <div class="hero-scroll" id="heroScroll">
+      <div class="hs-track"><div class="hs-dot"></div></div>
+      <span>scroll</span>
+    </div>
+
+    <!-- Awards strip pinned bottom left -->
+    <div class="hero-awards">
+      <span>★★★</span>
+      <span class="ha-div">·</span>
+      <span>World's 50 Best #4</span>
+      <span class="ha-div">·</span>
+      <span>Est. 2011</span>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════ MENU ═══════════════════════════ -->
+  <section id="menu" class="page-section">
+    <div class="sec-wrap">
+
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <div>
+          <h2 class="sec-title clip-reveal">The Menu</h2>
+          <p class="sec-sub clip-reveal delay-1">
+            Seasonal. Handwritten each week.<br/>
+            Every dish earns its place.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tab-row">
+        <button class="tab active" data-tab="t1">Starters</button>
+        <button class="tab" data-tab="t2">Mains</button>
+        <button class="tab" data-tab="t3">Desserts</button>
+        <button class="tab" data-tab="t4">Tasting</button>
+      </div>
+
+      <!-- Starter dishes -->
+      <div class="tab-panel active" id="t1">
+        <ul class="dish-lines">
+          <li class="dl fade-in">
+            <div class="dl-name">Hand-Dived Scallop</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">citrus · samphire · pancetta</span>
+              <span class="dl-price">£48</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-1">
+            <div class="dl-name">Brittany Lobster Bisque</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">saffron · caviar · brioche</span>
+              <span class="dl-price">£58</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-2">
+            <div class="dl-name">Foie Gras Parfait</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">Sauternes jelly · walnut · cornichon</span>
+              <span class="dl-price">£52</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-3">
+            <div class="dl-name">Devon Crab</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">avocado · yuzu foam · sesame</span>
+              <span class="dl-price">£46</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-4">
+            <div class="dl-name">Oscietra Caviar</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">blinis · crème fraîche · chive</span>
+              <span class="dl-price">£68</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main dishes -->
+      <div class="tab-panel" id="t2">
+        <ul class="dish-lines">
+          <li class="dl fade-in">
+            <div class="dl-name">Seared A5 Wagyu</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">truffle jus · morel · bone marrow</span>
+              <span class="dl-price">£145</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-1">
+            <div class="dl-name">Beef Wellington</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">Hereford · duxelles · Périgueux</span>
+              <span class="dl-price">£95</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-2">
+            <div class="dl-name">Wild Turbot</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">champagne beurre · caviar · spinach</span>
+              <span class="dl-price">£78</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-3">
+            <div class="dl-name">Rack of Lamb</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">herb crust · ratatouille · rosemary</span>
+              <span class="dl-price">£82</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-4">
+            <div class="dl-name">Garden Harvest</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">truffle · aged Comté · herb emulsion</span>
+              <span class="dl-price">£64</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desserts -->
+      <div class="tab-panel" id="t3">
+        <ul class="dish-lines">
+          <li class="dl fade-in">
+            <div class="dl-name">Dark Chocolate Sphere</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">Valrhona 72% · raspberry · caramel</span>
+              <span class="dl-price">£32</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-1">
+            <div class="dl-name">Crème Brûlée</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">Madagascar vanilla · candied citrus</span>
+              <span class="dl-price">£18</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-2">
+            <div class="dl-name">Grand Marnier Soufflé</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">orange coulis · crème anglaise</span>
+              <span class="dl-price">£26</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-3">
+            <div class="dl-name">Cheese Trolley</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">eight artisan cheeses · honeycomb</span>
+              <span class="dl-price">£28</span>
+            </div>
+          </li>
+          <li class="dl fade-in delay-4">
+            <div class="dl-name">Mignardises</div>
+            <div class="dl-dots"></div>
+            <div class="dl-right">
+              <span class="dl-note">house petit fours · seasonal</span>
+              <span class="dl-price">£16</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tasting -->
+      <div class="tab-panel" id="t4">
+        <div class="tasting-block">
+          <div class="tb-left fade-in">
+            <p class="tb-eyebrow">Seven Courses</p>
+            <h3>The CIEL<br/><em>Experience</em></h3>
+            <p class="tb-desc">
+              The complete expression of our kitchen's intention.
+              Available for the entire table. Menus change weekly
+              without notice — surrender is required.
+            </p>
+            <div class="tb-prices">
+              <div class="tbp"><span>Tasting Menu</span><b>£195 <em>pp</em></b></div>
+              <div class="tbp"><span>Wine Pairing</span><b>£135 <em>pp</em></b></div>
+              <div class="tbp"><span>Non-Alcoholic</span><b>£65 <em>pp</em></b></div>
+            </div>
+            <a href="#reserve" class="btn-dark" style="margin-top:2.5rem">Reserve Tasting Menu</a>
+          </div>
+          <div class="tb-right fade-in delay-2">
+            <div class="ta"><span>I</span><p>Amuse-Bouche</p></div>
+            <div class="ta"><span>II</span><p>Cold Starter</p></div>
+            <div class="ta"><span>III</span><p>Warm Starter</p></div>
+            <div class="ta"><span>IV</span><p>Fish Course</p></div>
+            <div class="ta"><span>V</span><p>Sorbet</p></div>
+            <div class="ta"><span>VI</span><p>Main Course</p></div>
+            <div class="ta"><span>VII</span><p>Dessert &amp; Mignardises</p></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu-note fade-in">All prices include VAT · 12.5% service · Please advise on all dietary requirements</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ RESERVE ═══════════════════════════ -->
+  <section id="reserve" class="page-section section-alt">
+    <div class="sec-wrap">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <div>
+          <h2 class="sec-title clip-reveal">Reserve</h2>
+          <p class="sec-sub clip-reveal delay-1">
+            Twelve tables. One seating.<br/>
+            Tuesday through Saturday.
+          </p>
+        </div>
+      </div>
+
+      <div class="reserve-split">
+
+        <!-- Info column -->
+        <div class="res-info fade-in">
+          <div class="ri-row"><span>Service</span><b>Tuesday — Saturday</b></div>
+          <div class="ri-row"><span>Seating</span><b>19:00 only</b></div>
+          <div class="ri-row"><span>Duration</span><b>Approx. 3 hours</b></div>
+          <div class="ri-row"><span>Dress</span><b>Smart elegant</b></div>
+          <div class="ri-row"><span>Deposit</span><b>£75 per person</b></div>
+          <div class="ri-row"><span>Groups 6+</span><b>+44 (0)20 7491 2100</b></div>
+          <blockquote class="res-quote">
+            "The greatest luxury is a room where nothing needs to be said."
+            <cite>— Chef Elara Voss</cite>
+          </blockquote>
+        </div>
+
+        <!-- Form -->
+        <form id="res-form" novalidate>
+          <div class="f-row">
+            <div class="f-field">
+              <label for="rName">Name <sup>*</sup></label>
+              <input id="rName" type="text" placeholder="Your full name" required/>
+            </div>
+            <div class="f-field">
+              <label for="rEmail">Email <sup>*</sup></label>
+              <input id="rEmail" type="email" placeholder="you@email.com" required/>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-field">
+              <label for="rDate">Date <sup>*</sup></label>
+              <input id="rDate" type="date" required/>
+            </div>
+            <div class="f-field">
+              <label for="rGuests">Guests <sup>*</sup></label>
+              <select id="rGuests" required>
+                <option value="">—</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-field">
+              <label for="rMenu">Menu</label>
+              <select id="rMenu">
+                <option value="">Optional</option>
+                <option>À La Carte</option>
+                <option>Tasting Menu (£195pp)</option>
+                <option>Tasting + Wine (£330pp)</option>
+              </select>
+            </div>
+            <div class="f-field">
+              <label for="rOccasion">Occasion</label>
+              <select id="rOccasion">
+                <option value="">Optional</option>
+                <option>Anniversary</option>
+                <option>Birthday</option>
+                <option>Proposal</option>
+                <option>Business</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-field f-full">
+            <label for="rNotes">Notes &amp; Dietary Requirements</label>
+            <textarea id="rNotes" rows="3" placeholder="Allergies, dietary needs, special requests…"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="formBtn">
+            <span id="btnTxt">Reserve My Table</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="f-legal">£75 deposit per person required. We confirm within 2 hours Tue–Sat.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FIND US ═══════════════════════════ -->
+  <section id="find" class="page-section">
+    <div class="sec-wrap">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <div>
+          <h2 class="sec-title clip-reveal">Find Us</h2>
+          <p class="sec-sub clip-reveal delay-1">Mayfair, London</p>
+        </div>
+      </div>
+
+      <div class="find-split">
+        <div class="find-info fade-in">
+          <div class="fi-block">
+            <h4>Address</h4>
+            <p>12 Clarges Street<br/>Mayfair, London W1J 7EJ</p>
+            <a href="https://maps.google.com/?q=Clarges+Street+Mayfair+London" class="txt-link" target="_blank" rel="noopener">Directions →</a>
+          </div>
+          <div class="fi-block">
+            <h4>Hours</h4>
+            <p>Tuesday – Saturday<br/>19:00 – 23:00</p>
+            <p class="fi-note">Sunday &amp; Monday closed</p>
+          </div>
+          <div class="fi-block">
+            <h4>Contact</h4>
+            <p><a href="tel:+442074912100">+44 (0)20 7491 2100</a><br/><a href="mailto:hello@ciel.london">hello@ciel.london</a></p>
+          </div>
+          <div class="fi-block">
+            <h4>Getting Here</h4>
+            <p>Green Park (2 min walk)<br/>Valet parking Tue–Sat</p>
+          </div>
+          <div class="find-actions">
+            <a href="https://wa.me/442074912100" class="btn-dark" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com" class="btn-line" target="_blank">@ciel.london</a>
+          </div>
+        </div>
+
+        <div class="find-map fade-in delay-2">
+          <iframe
+            title="CIEL Restaurant Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4085858398056!2d-0.14764868460847235!3d51.507322979636025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052d3aed84f9%3A0x14e7b82a74a8e8f7!2sMayfair%2C%20London!5e0!3m2!1sen!2suk!4v1620000000000"
+            width="100%" height="420" style="border:0" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer id="footer">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <div class="foot-logo">CIEL</div>
+        <p>Twelve tables. One intention.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#">Privacy</a>
+        <a href="#">Allergens</a>
+        <a href="#">Cancellation Policy</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <p class="foot-copy">© 2024 CIEL Restaurant Ltd · London</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="btt" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
